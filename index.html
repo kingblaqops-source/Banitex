@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BANITEX — Clothing & Footwear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== MARQUEE TICKER ===== -->
+  <div class="ticker">
+    <div class="ticker__track">
+      <span>NEW DROP EVERY FRIDAY</span>
+      <span>★</span>
+      <span>FREE DELIVERY LAGOS &amp; ABUJA</span>
+      <span>★</span>
+      <span>BANITEX — WEAR THE STREET</span>
+      <span>★</span>
+      <span>NEW DROP EVERY FRIDAY</span>
+      <span>★</span>
+      <span>FREE DELIVERY LAGOS &amp; ABUJA</span>
+      <span>★</span>
+      <span>BANITEX — WEAR THE STREET</span>
+      <span>★</span>
+    </div>
+  </div>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav">
+    <a href="index.html" class="nav__logo">BANITEX<span class="dot">.</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html">home</a>
+      <a href="shop.html">shop</a>
+      <a href="index.html#about">about</a>
+      <a href="index.html#contact">contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="icon-btn" id="cartBtn" aria-label="Open cart">
+        CART <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+      <div class="hero__poster">
+        <p class="hero__tag">— NEW SEASON —</p>
+        <h1 class="hero__title">
+          DRESS<br>
+          LOUD.<br>
+          <span class="hero__title-outline">WALK</span><br>
+          LOUDER.
+        </h1>
+        <p class="hero__sub">Streetwear &amp; footwear built for Lagos pace. Heavy cotton, real rubber, no shortcuts.</p>
+        <a href="shop.html" class="btn btn--primary">SHOP THE DROP →</a>
+      </div>
+      <div class="hero__tagcloud">
+        <span class="price-tag price-tag--1">NEW</span>
+        <span class="price-tag price-tag--2">₦8,500</span>
+        <span class="price-tag price-tag--3">LIMITED</span>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED PRODUCTS ===== -->
+    <section id="featured" class="section">
+      <div class="section__head section__head--row">
+        <div>
+          <p class="section__eyebrow">01 — FEATURED</p>
+          <h2 class="section__title">FRESH IN</h2>
+        </div>
+        <a href="shop.html" class="section__viewall">VIEW FULL SHOP →</a>
+      </div>
+      <div class="product-grid" id="featuredGrid">
+
+        <article class="product-card" data-id="c3" data-name="Heavyweight Hoodie" data-price="22000">
+          <div class="product-card__tag">HOT</div>
+          <div class="product-card__img">
+            <div class="product-card__placeholder">HOOD</div>
+          </div>
+          <h3>Heavyweight Hoodie</h3>
+          <p class="product-card__price">₦22,000</p>
+          <button class="btn btn--add" data-add="c3">ADD TO CART</button>
+        </article>
+
+        <article class="product-card" data-id="f1" data-name="Street Runner Sneaker" data-price="27000">
+          <div class="product-card__tag">NEW</div>
+          <div class="product-card__img">
+            <div class="product-card__placeholder">RUNNER</div>
+          </div>
+          <h3>Street Runner Sneaker</h3>
+          <p class="product-card__price">₦27,000</p>
+          <button class="btn btn--add" data-add="f1">ADD TO CART</button>
+        </article>
+
+        <article class="product-card" data-id="c1" data-name="Oversized Graphic Tee" data-price="9500">
+          <div class="product-card__tag">NEW</div>
+          <div class="product-card__img">
+            <div class="product-card__placeholder">TEE</div>
+          </div>
+          <h3>Oversized Graphic Tee</h3>
+          <p class="product-card__price">₦9,500</p>
+          <button class="btn btn--add" data-add="c1">ADD TO CART</button>
+        </article>
+
+        <article class="product-card" data-id="f4" data-name="Combat Boot" data-price="32000">
+          <div class="product-card__tag">HOT</div>
+          <div class="product-card__img">
+            <div class="product-card__placeholder">BOOT</div>
+          </div>
+          <h3>Combat Boot</h3>
+          <p class="product-card__price">₦32,000</p>
+          <button class="btn btn--add" data-add="f4">ADD TO CART</button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section section--about">
+      <div class="about__grid">
+        <div>
+          <p class="section__eyebrow">02 — ABOUT</p>
+          <h2 class="section__title">MADE FOR<br>THE MOVE</h2>
+        </div>
+        <p class="about__text">
+          BANITEX is built on one idea — clothes and shoes that keep up with real life:
+          danfo rides, late closes, long walks, longer nights. Every piece is tested for
+          heat, dust, and distance before it ever hits the rack. No filler designs,
+          no flimsy soles — just gear that holds up.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section section--contact">
+      <p class="section__eyebrow">03 — CONTACT</p>
+      <h2 class="section__title">LINK UP</h2>
+      <p class="contact__intro">Got a question, a custom order, or just want to talk gear? Send it straight to us.</p>
+
+      <div class="contact__grid">
+        <form
+          class="contact-form"
+          id="contactForm"
+          action="https://formspree.io/f/xpqgrvdo"
+          method="POST"
+        >
+          <div class="form-row">
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name">
+          </div>
+
+          <div class="form-row">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+
+          <div class="form-row">
+            <label for="message">MESSAGE</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell us what's up..."></textarea>
+          </div>
+
+          <!-- Honeypot field to reduce spam — keep hidden from real users -->
+          <input type="text" name="_gotcha" style="display:none">
+
+          <button type="submit" class="btn btn--primary btn--submit" id="submitBtn">SEND MESSAGE →</button>
+
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+
+        <div class="contact__links">
+          <p class="contact__links-label">OR FIND US</p>
+          <a href="mailto:hello@banitex.com" class="contact__link">EMAIL →</a>
+          <a href="https://instagram.com/banitex" class="contact__link">INSTAGRAM →</a>
+          <a href="https://wa.me/2340000000000" class="contact__link">WHATSAPP →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>BANITEX © 2026 · LAGOS, NIGERIA</p>
+  </footer>
+
+  <!-- ===== CART DRAWER ===== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-drawer__head">
+      <h2>YOUR CART</h2>
+      <button class="cart-drawer__close" id="cartClose" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-drawer__items" id="cartItems">
+      <p class="cart-empty" id="cartEmpty">Your cart is empty. Go grab something.</p>
+    </div>
+    <div class="cart-drawer__footer">
+      <div class="cart-total">
+        <span>TOTAL</span>
+        <span id="cartTotal">₦0</span>
+      </div>
+      <button class="btn btn--primary btn--checkout" id="checkoutBtn">CHECKOUT</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

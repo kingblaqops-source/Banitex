@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — BANITEX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== MARQUEE TICKER ===== -->
+  <div class="ticker">
+    <div class="ticker__track">
+      <span>NEW DROP EVERY FRIDAY</span>
+      <span>★</span>
+      <span>FREE DELIVERY LAGOS &amp; ABUJA</span>
+      <span>★</span>
+      <span>BANITEX — WEAR THE STREET</span>
+      <span>★</span>
+      <span>NEW DROP EVERY FRIDAY</span>
+      <span>★</span>
+      <span>FREE DELIVERY LAGOS &amp; ABUJA</span>
+      <span>★</span>
+      <span>BANITEX — WEAR THE STREET</span>
+      <span>★</span>
+    </div>
+  </div>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav">
+    <a href="index.html" class="nav__logo">BANITEX<span class="dot">.</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html">home</a>
+      <a href="shop.html" class="is-active">shop</a>
+      <a href="index.html#about">about</a>
+      <a href="index.html#contact">contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="icon-btn" id="cartBtn" aria-label="Open cart">
+        CART <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== SHOP HEADER ===== -->
+    <section class="shop-head">
+      <p class="section__eyebrow">FULL CATALOG</p>
+      <h1 class="shop-head__title">THE STORE</h1>
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn is-active" data-filter="all">ALL</button>
+        <button class="filter-btn" data-filter="clothing">CLOTHING</button>
+        <button class="filter-btn" data-filter="footwear">FOOTWEAR</button>
+      </div>
+    </section>
+
+    <!-- ===== CLOTHING ===== -->
+    <section class="section" data-category="clothing">
+      <div class="section__head">
+        <p class="section__eyebrow">01 — CLOTHING</p>
+        <h2 class="section__title">THE RACK</h2>
+      </div>
+      <div class="product-grid" id="clothingGrid">
+
+        <article class="product-card" data-id="c1" data-name="Oversized Graphic Tee" data-price="9500">
+          <div class="product-card__tag">NEW</div>
+          <div class="product-card__img">
+            <div class="product-card__placeholder">TEE</div>
+          </div>
+          <h3>Oversized Graphic Tee</h3>
+          <p class="product-card__price">₦9,500</p>
+          <button class="btn btn--add" data-add="c1">ADD TO CART</button>
+        </article>
+
+        <article class="product-card" data-id="c2" data-name="Cargo Utility Pants" data-price="18000">
+          <div class="product-card__img">
+            <div class="product-card__placeholder">CARGO</div>
+          </div>
+          <h3>Cargo Utility Pants</h3>
+          <p class="product-card__price">₦18,000</p>
+          <button class="btn btn--add" data-add="c2">ADD TO CART</button>
+        </article>
+
+        <article class="product-card" data-id="c3" data-name="Heavyweight Hoodie" data-price="22000">
+          <div class="product-card__tag">HOT</div>
+          <div class="product-card__img">
+            <div class="product-card__placeholder">HOOD</div>
+          </div>
+          <h3>Heavyweight Hoodie</h3>
+          <p class="product-card__price">₦22,000</p>
+          <button class="btn btn--add" data-add="c3">ADD TO CART</button>
+        </article>
+
+        <article class="product-card" data-id="c4" data-name="Track Jacket" data-price="16500">
+          <div class="product-card__img">
+            <div class="product-card__placeholder">TRACK</div>
+          </div>
+          <h3>Track Jacket</h3>
+          <p class="product-card__price">₦16,500</p>
+          <button class="btn btn--add" data-add="c4">ADD TO CART</button>
+        </article>
+
+        <article class="product-card" data-id="c5" data-name="Ribbed Tank Top" data-price="7000">
+          <div class="product-card__img">
+            <div class="product-card__placeholder">TANK</div>
+          </div>
+          <h3>Ribbed Tank Top</h3>
+          <p class="product-card__price">₦7,000</p>
+          <button class="btn btn--add" data-add="c5">ADD TO CART</button>
+        </article>
+
+        <article class="product-card" data-id="c6" data-name="Denim Jacket" data-price="25000">
+          <div class="product-card__img">
+            <div class="product-card__placeholder">DENIM</div>
+          </div>
+          <h3>Denim Jacket</h3>
+          <p class="product-card__price">₦25,000</p>
+          <button class="btn btn--add" data-add="c6">ADD TO CART</button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== FOOTWEAR ===== -->
+    <section class="section section--alt" data-category="footwear">
+      <div class="section__head">
+        <p class="section__eyebrow">02 — FOOTWEAR</p>
+        <h2 class="section__title">THE SOLE</h2>
+      </div>
+      <div class="product-grid" id="footwearGrid">
+
+        <article class="product-card" data-id="f1" data-name="Street Runner Sneaker" data-price="27000">
+          <div class="product-card__tag">NEW</div>
+          <div class="product-card__img">
+            <div class="product-card__placeholder">RUNNER</div>
+          </div>
+          <h3>Street Runner Sneaker</h3>
+          <p class="product-card__price">₦27,000</p>
+          <button class="btn btn--add" data-add="f1">ADD TO CART</button>
+        </article>
+
+        <article class="product-card" data-id="f2" data-name="Canvas High-Top" data-price="21000">
+          <div class="product-card__img">
+            <div class="product-card__placeholder">HI-TOP</div>
+          </div>
+          <h3>Canvas High-Top</h3>
+          <p class="product-card__price">₦21,000</p>
+          <button class="btn btn--add" data-add="f2">ADD TO CART</button>
+        </article>
+
+        <article class="product-card" data-id="f3" data-name="Slide Sandals" data-price="9000">
+          <div class="product-card__img">
+            <div class="product-card__placeholder">SLIDE</div>
+          </div>
+          <h3>Slide Sandals</h3>
+          <p class="product-card__price">₦9,000</p>
+          <button class="btn btn--add" data-add="f3">ADD TO CART</button>
+        </article>
+
+        <article class="product-card" data-id="f4" data-name="Combat Boot" data-price="32000">
+          <div class="product-card__tag">HOT</div>
+          <div class="product-card__img">
+            <div class="product-card__placeholder">BOOT</div>
+          </div>
+          <h3>Combat Boot</h3>
+          <p class="product-card__price">₦32,000</p>
+          <button class="btn btn--add" data-add="f4">ADD TO CART</button>
+        </article>
+
+        <article class="product-card" data-id="f5" data-name="Low-Top Skate Shoe" data-price="19500">
+          <div class="product-card__img">
+            <div class="product-card__placeholder">SKATE</div>
+          </div>
+          <h3>Low-Top Skate Shoe</h3>
+          <p class="product-card__price">₦19,500</p>
+          <button class="btn btn--add" data-add="f5">ADD TO CART</button>
+        </article>
+
+        <article class="product-card" data-id="f6" data-name="Chunky Trainer" data-price="29500">
+          <div class="product-card__img">
+            <div class="product-card__placeholder">TRAINER</div>
+          </div>
+          <h3>Chunky Trainer</h3>
+          <p class="product-card__price">₦29,500</p>
+          <button class="btn btn--add" data-add="f6">ADD TO CART</button>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>BANITEX © 2026 · LAGOS, NIGERIA</p>
+  </footer>
+
+  <!-- ===== CART DRAWER ===== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-drawer__head">
+      <h2>YOUR CART</h2>
+      <button class="cart-drawer__close" id="cartClose" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-drawer__items" id="cartItems">
+      <p class="cart-empty" id="cartEmpty">Your cart is empty. Go grab something.</p>
+    </div>
+    <div class="cart-drawer__footer">
+      <div class="cart-total">
+        <span>TOTAL</span>
+        <span id="cartTotal">₦0</span>
+      </div>
+      <button class="btn btn--primary btn--checkout" id="checkoutBtn">CHECKOUT</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
