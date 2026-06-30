@@ -60,7 +60,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .ticker__track {
   display: flex;
   width: max-content;
-  animation: scroll-ticker 40ss linear infinite;
+  animation: scroll-ticker 40s linear infinite;
   will-change: transform;
 }
 
