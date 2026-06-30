@@ -57,24 +57,22 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border-bottom: 2px solid var(--black);
 }
 
-.ticker__track {
-  display: inline-flex;
+..ticker__track {
+  display: flex;
+  width: max-content;
+  animation: scroll-ticker 50s linear infinite;
+  will-change: transform;
+}
+
+.ticker__group {
+  display: flex;
   align-items: center;
   gap: 1.5rem;
   padding: 0.5rem 0;
   font-family: var(--font-display);
   font-size: 0.75rem;
   letter-spacing: 0.05em;
-  animation: scroll-ticker 50s linear infinite;
-  will-change: transform;
-  backface-visibility: hidden;
-}
-
-.ticker__track span { padding: 0 0.5rem; }
-
-@keyframes scroll-ticker {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  padding-right: 1.5rem;
 }
 
 /* ============================================
