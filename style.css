@@ -66,6 +66,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-size: 0.75rem;
   letter-spacing: 0.05em;
   animation: scroll-ticker 50s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .ticker__track span { padding: 0 0.5rem; }
