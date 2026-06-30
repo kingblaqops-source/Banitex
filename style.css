@@ -57,7 +57,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border-bottom: 2px solid var(--black);
 }
 
-..ticker__track {
+.ticker__track {
   display: flex;
   width: max-content;
   animation: scroll-ticker 30s linear infinite;
