@@ -75,6 +75,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding-right: 1.5rem;
 }
 
+@keyframes scroll-ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 /* ============================================
    NAV
 ============================================ */
